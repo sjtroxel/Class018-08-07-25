@@ -4,7 +4,7 @@
       "src": "fe_books/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "fe_books/dist/fe_books/browser"
+        "distDir": "dist/fe_books/browser"
       }
     }
   ],
