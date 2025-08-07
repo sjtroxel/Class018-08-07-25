@@ -1,0 +1,22 @@
+{
+  "builds": [
+    {
+      "src": "fe_books/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "fe_books/dist/fe_books"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*\\.(js|css|png|jpg|svg|woff2?|eot|ttf|map|json))",
+      "headers": { "cache-control": "public,max-age=31536000,immutable" },
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
