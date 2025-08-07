@@ -1,10 +1,10 @@
 {
   "builds": [
     {
-      "src": "fe_books/package.json",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "fe_books/dist/fe_books"
+        "distDir": "fe_books/dist/browser"
       }
     }
   ],
